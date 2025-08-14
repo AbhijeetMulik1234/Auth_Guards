@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-child',
-  imports: [],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './dashboard-child.html',
-  styleUrl: './dashboard-child.css'
+  styleUrl: './dashboard-child.css',
 })
-export class DashboardChild {
-
-}
+export class DashboardChild {}

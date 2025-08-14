@@ -11,6 +11,7 @@ export class Login {
   constructor(private router: Router) {}
 
   login() {
+    debugger;
     localStorage.setItem('isLoggedItem', 'true');
     this.router.navigate(['/dashboard']);
   }

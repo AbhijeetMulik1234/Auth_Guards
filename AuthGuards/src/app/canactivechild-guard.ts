@@ -3,7 +3,7 @@ import { CanActivateChildFn, Router } from '@angular/router';
 
 export const canactivechildGuard: CanActivateChildFn = (childRoute, state) => {
   const router = inject(Router);
-  const isLogedIn = localStorage.getItem('isLoggedIn');
+  const isLogedIn = localStorage.getItem('isLoggedItem');
 
   if (isLogedIn === 'true') {
     return true;
